@@ -11,3 +11,13 @@
     background-size: cover;
   }
 }
+.blog-item .pin.pin::before {
+  // 修改颜色
+  background-image: linear-gradient(red, red);
+}
+
+@media screen and (max-width: 640px)  {
+  .blog-info-wrapper{
+    display: none;
+  }
+}

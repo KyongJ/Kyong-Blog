@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress';
 
 // 导入主题的配置
-import { blogTheme } from './blog-theme';
+import { blogTheme } from './theme/blog-theme';
 
 // 如果使用 GitHub/Gitee Pages 等公共平台部署
 // 通常需要修改 base 路径，通常为“/仓库名/”
@@ -9,14 +9,12 @@ import { blogTheme } from './blog-theme';
 // const base = process.env.GITHUB_ACTIONS === 'true'
 //   ? '/vitepress-blog-sugar-template/'
 //   : '/'
-const base = '/Kyong-Blog/'
+const base = '/Kyong-Blog/';
 // Vitepress 默认配置
 // 详见文档：https://vitepress.dev/reference/site-config
 export default defineConfig({
-    // 继承博客主题(@sugarat/theme)
     base,
     extends: blogTheme,
-    // base,
     lang: 'zh-cn',
     title: "Kyong's Blog",
     description: 'Kyong博客,记录学习生活',
@@ -39,7 +37,7 @@ export default defineConfig({
         lastUpdatedText: '上次更新于',
 
         // 设置logo
-        logo: '/logo.png',
+        logo: '/avatar.jpg',
         // editLink: {
         //   pattern:
         //     'https://github.com/ATQQ/sugar-blog/tree/master/packages/blogpress/:path',
@@ -47,12 +45,37 @@ export default defineConfig({
         // },
         nav: [
             { text: '首页', link: '/' },
+            {
+                text: '前端总结',
+                items: [
+                    {
+                        text: '轻取(文件收集)',
+                        link: 'https://ep2.sugarat.top',
+                    },
+                    {
+                        text: '个人图床',
+                        link: 'https://imgbed.sugarat.top',
+                    },
+                    {
+                        text: '考勤小程序',
+                        link: 'https://hdkq.sugarat.top/',
+                    },
+                    {
+                        text: '时光恋人',
+                        link: 'https://lover.sugarat.top',
+                    },
+                    {
+                        text: '在线简历生成',
+                        link: 'https://resume.sugarat.top/',
+                    },
+                ],
+            },
             { text: '关于作者', link: 'https://sugarat.top/aboutme.html' },
         ],
         socialLinks: [
             {
                 icon: 'github',
-                link: 'https://github.com/ATQQ/sugar-blog/tree/master/packages/theme',
+                link: 'https://github.com/KyongJ',
             },
         ],
     },
