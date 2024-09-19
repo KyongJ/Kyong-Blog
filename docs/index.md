@@ -2,7 +2,7 @@
 layout: home
 # 首页部分元素定制
 blog:
- name: "Kyong'Blog"
+ name: "Kyong's Blog"
  motto: 记录日常的学习与生活
  inspiring:
   - 千万不要因为走得太久，而忘记了我们为什么出发
