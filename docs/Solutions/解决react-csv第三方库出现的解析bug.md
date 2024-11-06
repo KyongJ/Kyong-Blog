@@ -1,3 +1,12 @@
+---
+sticky: 1000
+title: 解决react-csv第三方库出现的解析Bug
+author: Kyong
+date: 2022-06-21
+tag: 
+  - Solutions
+---
+
 # 解决react-csv第三方库出现的解析Bug
 
 ### 一、寻找BUG的原因
