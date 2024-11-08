@@ -1,3 +1,12 @@
+---
+title: KyongUI——CountDown倒计时组件
+description: 在YY直播实习的时候，负责的是YY520交友活动页面的搭建，其中有一个需求就是页面会存在一个倒计时组件，在活动结束的前一天在完成某些任务后，可以点击抽奖。由于 `UI` 库使用的是 `antd`，所以我第一反应是使用 `antd` 的 `CountDown` 组件。
+author: Kyong
+date: 2023-05-23
+tag: 
+  - 组件设计
+hidden: true
+---
 # KyongUI——Popover气泡卡片
 
 ## 一、设计Props

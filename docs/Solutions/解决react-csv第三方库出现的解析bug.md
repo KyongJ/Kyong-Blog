@@ -1,6 +1,7 @@
 ---
 sticky: 1000
 title: 解决react-csv第三方库出现的解析Bug
+description: 最近在公司实习期间接到一个需求，将表格数据导出成CSV格式。在网上查找了一番资料后，决定使用react-csv第三方库来完成需求。完成需求的过程还是挺顺利的，但是在自测的时候发现当表格字段在双引号内又出现双引号时，csv的解析会出现bug
 author: Kyong
 date: 2022-06-21
 tag: 

@@ -1,10 +1,14 @@
+---
+title: Taro引入Ant Design-Mobile
+description: 最近在使用Taro开发微信小程序项目，由于Taro自带的UI内容有限，遂想引入Antd-mobile，方便开发
+author: Kyong
+date: 2022-03-11
+tag: 
+  - 项目
+---
+
 # Taro引入Ant Design-Mobile
-
-> 引言
->
 > 最近在使用Taro开发微信小程序项目，由于Taro自带的UI内容有限，遂想引入Antd-mobile，方便开发
-
-
 
 本文主要是基于凹凸实验室的文章做一点小修改（完全按照凹凸实验室发的，UI会消失）
 

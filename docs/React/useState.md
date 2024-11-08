@@ -1,6 +1,10 @@
 ---
 title: 你真的了解useState吗？
-description: 默认支持流程图，tabs面板，待办列表，作品页面
+description: 自React引入Hooks后，、React允许你在不编写class的情况下可以使用state和其他的React特性。`useState`就是函数组件引入状态的钩子函数。在平时开发的时候，我一直对setState的执行机制有点迷糊，`useState`方法到底是同步还是异步，如果是异步，执行的时机又在什么什么时候呢？再观看了许多博客文章和自己实践后，决定写一个总结。
+author: Kyong
+date: 2022-12-13
+tag: 
+  - React
 ---
 
 # 你真的了解useState吗？

@@ -1,12 +1,20 @@
-# 性能优化
+---
+title: 记录一次Webpack性能优化
+description: 代码分析，利用 webpack-bundle-analyzer 检查当前 bundle
+author: Kyong
+date: 2023-04-27
+tag: 
+  - 性能优化
+---
+# 记录一次Webpack性能优化
 
-### 一、一开始项目
+## 开始项目
 
 ![image-20230301173729894](https://kyong-blog.oss-cn-shenzhen.aliyuncs.com/articleContent/image-20230301173729894.png)
 
 
 
-代码分析
+### 1、代码分析
 
 利用 `webpack-bundle-analyzer` 检查当前 bundle
 
@@ -43,7 +51,7 @@ yarn build
 
 
 
-2、Prefetch 预获取
+### 2、Prefetch 预获取
 
 由于路由懒加载功能将非首屏依赖抽离出来，默认只在进入对应路由页面时刻进行加载，这会导致路由跳转时出现白屏或者`loading`，影响用户体验。所以我们使用 `Prefetch`预获取功能来帮助解决这个问题。
 
@@ -59,7 +67,7 @@ const Tag = lazy(() => import(/* webpackPrefetch: true, webpackChunkName: "Tag" 
 
 
 
-3、解决React+Ant Design 打包后vendors.js过大问题
+### 3、解决React+Ant Design 打包后vendors.js过大问题
 
 按需引入
 
@@ -72,7 +80,9 @@ const Tag = lazy(() => import(/* webpackPrefetch: true, webpackChunkName: "Tag" 
 - 使用 react-testing-library 完成单元测试，提高组件库功能完整性与正确性
 
 **项目介绍**：适合于个人使用的技术博客，拥有后台管理系统进行协同管理。后台管理系统分为四个模块，分别为用户模块、文章模块、资源模块以及角色权限模块。 
+
 **技术总结**：TypeScript +React Hooks+ Redux + Ant Design 
+
 **项目职责**： 
 
 - 使用gzip压缩资源文件；使用webpack中的external配合cdn分流一些稳定的第三方库；使用路由懒加载避免首屏一次性加载全部资源
