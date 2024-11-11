@@ -46,6 +46,10 @@ export default defineConfig({
         nav: [
             { text: '首页', link: '/' },
             {
+                text: '面试总结',
+                link: '/nav/面试总结'
+            },
+            {
                 text: '前端总结',
                 items: [
                     {

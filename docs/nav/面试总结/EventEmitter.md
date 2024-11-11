@@ -3,8 +3,7 @@ title: 发布订阅者模式——EventMitter
 description: 发布-订阅模式其实是一种对象间一对多的依赖关系，当一个对象的状态发生改变时，所有依赖于它的对象都将得到状态改变的通知。
 author: Kyong
 date: 2023-02-13
-tag: 
-  - 面试能手
+hidden: true
 ---
 # 发布订阅者模式——EventMitter
 
