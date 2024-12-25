@@ -304,8 +304,7 @@ cover: false
 可以通过下面的 `hiddenCover` 隐藏文章页的展示
 
 ### hiddenCover
-`hiddenCover` 控制是否展示当前文章的封面，全局配置开关见 [article.hiddenCover](./global.md#article)
-```md
+`hiddenCover` 控制是否展示当前文章的封面
 ---
 hiddenCover: true 
 cover: url
