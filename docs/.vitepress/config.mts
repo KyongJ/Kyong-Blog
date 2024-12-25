@@ -28,7 +28,7 @@ export default defineConfig({
     themeConfig: {
         // 展示 2,3 级标题在目录中
         outline: {
-            level: [2, 3],
+            level: [2, 4],
             label: '目录',
         },
         // 默认文案修改
@@ -47,7 +47,7 @@ export default defineConfig({
             { text: '首页', link: '/' },
             {
                 text: '面试总结',
-                link: '/nav/面试总结'
+                link: '/nav/面试总结/index.md'
             },
             {
                 text: '前端总结',
