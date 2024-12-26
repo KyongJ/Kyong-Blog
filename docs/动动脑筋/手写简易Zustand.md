@@ -246,7 +246,7 @@ export function useCustomStore<TState, StateSlice>(
     return selector(api.getState());
 }
 ```
-
+使用`useState`来触发组件更新，通过`useEffect`来订阅状态变化。创建`handlechange`函数来判断状态是否变化，如果变化则触发组件更新。
 
 
 ### 2.2 vanilla.ts文件解析
@@ -338,4 +338,6 @@ export const createStoreImpl: creatorStoreImpl = createStateFn => {
 ## 三、总结
 
 到这里，我们已经搭建了一个简易的Zustand，并具备了基本的全局状态管理功能。在这次Zustand源码学习中，除了学习到设计的巧思之外，我对ts的类型定义也有了更深的理解。当然，这只是一个简单的演示项目，主要目的是帮助我们深入理解 Zustand 的工作原理和实现细节。在实际生产环境中，一个成熟的状态管理器还需要应对更多复杂的挑战，比如性能优化、中间件集成、跨平台支持。我将继续深入学习其他源码，并与大家分享我的学习成果！
+
+完整代码:https://github.com/KyongJ/Zustand-ky
 
