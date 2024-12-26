@@ -7,13 +7,19 @@ const blogTheme = getThemeConfig({
   // 默认开启pagefind离线的全文搜索支持（如使用其它的可以设置为false）
   // search: false,
 
-  // markdown 图表支持（会增加一定的构建耗时）
-  // mermaid: true
-
+  article: {
+     /**
+     * 是否展示文章的预计阅读时间
+     */
+     readingTime: true,
+     /**
+     * 阅读时间分析展示位置
+     */
+    readingTimePosition: 'inline',
+  },
   // 页脚
   footer: {
     // message 字段支持配置为HTML内容，配置多条可以配置为数组
-    // message: '下面 的内容和图标都是可以修改的噢（当然本条内容也是可以隐藏的）',
     copyright: 'MIT License | Kyong',
     // icpRecord: {
     //   name: '蜀ICP备19011724号',

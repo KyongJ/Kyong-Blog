@@ -332,7 +332,7 @@ hidden: true
 
 ```md
 ---
-author: 粥里有勺糖
+author: Kyong
 ---
 ```
 
